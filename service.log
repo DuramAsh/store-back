@@ -1,0 +1,29 @@
+2023-12-07T15:36:25.398+0600	ERROR	app/app.go:38	ERR_INIT_REPOSITORY	{"error": "migration failed: syntax error at or near \")\" (column 7) in line 13: CREATE EXTENSION IF NOT EXISTS pgcrypto;\r\n\r\nCREATE TABLE IF NOT EXISTS products (\r\n\tcreated_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n\tupdated_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n\tid          VARCHAR PRIMARY KEY DEFAULT GEN_RANDOM_UUID(),\r\n\ttitle   VARCHAR NOT NULL,\r\n\timageURL   VARCHAR NOT NULL,\r\n\tprice   NUMERIC NOT NULL,\r\n\tcategory VARCHAR NOT NULL,\r\n);\r\n\r\nCREATE TABLE IF NOT EXISTS orders (\r\n\tcreated_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n\tupdated_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n\tid          VARCHAR PRIMARY KEY DEFAULT GEN_RANDOM_UUID(),\r\n\tuser_id    VARCHAR NOT NULL,\r\n);\r\n\r\nCREATE TABLE IF NOT EXISTS users (\r\n\tcreated_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n\tupdated_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\r\n\tid          VARCHAR PRIMARY KEY DEFAULT GEN_RANDOM_UUID(),\r\n\temail   \tVARCHAR NOT NULL,\r\n\tpassword   VARCHAR NOT NULL,\r\n); (details: pq: syntax error at or near \")\")"}
+store-back/internal/app.Run
+	C:/Users/Zhaksylyk A. Ashim/Desktop/KBTU/7_semester/React/react-fall-2023/store-back/internal/app/app.go:38
+main.main
+	C:/Users/Zhaksylyk A. Ashim/Desktop/KBTU/7_semester/React/react-fall-2023/store-back/main.go:22
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:267
+2023-12-07T15:38:49.077+0600	INFO	app/app.go:79	http server started on http://localhost:2004/swagger/index.html
+2023-12-07T15:47:50.794+0600	INFO	app/app.go:79	http server started on http://localhost:2004/swagger/index.html
+2023-12-07T15:53:35.499+0600	INFO	app/app.go:79	http server started on http://localhost:2004/swagger/index.html
+2023-12-07T15:54:54.625+0600	ERROR	server/server.go:42	ERR_SERVE_HTTP	{"error": "http: Server closed"}
+store-back/pkg/server.(*Server).Run.func1
+	C:/Users/Zhaksylyk A. Ashim/Desktop/KBTU/7_semester/React/react-fall-2023/store-back/pkg/server/server.go:42
+2023-12-07T15:55:20.869+0600	INFO	app/app.go:79	http server started on http://localhost:2004/swagger/index.html
+2023-12-07T15:58:12.573+0600	INFO	app/app.go:79	http server started on http://localhost:2004/swagger/index.html
+2023-12-07T16:01:22.172+0600	INFO	app/app.go:79	http server started on http://localhost:2004/swagger/index.html
+2023-12-07T16:02:33.940+0600	ERROR	server/server.go:42	ERR_SERVE_HTTP	{"error": "http: Server closed"}
+store-back/pkg/server.(*Server).Run.func1
+	C:/Users/Zhaksylyk A. Ashim/Desktop/KBTU/7_semester/React/react-fall-2023/store-back/pkg/server/server.go:42
+2023-12-07T16:02:46.567+0600	INFO	app/app.go:79	http server started on http://localhost:2004/swagger/index.html
+2023-12-07T16:03:42.710+0600	ERROR	server/server.go:42	ERR_SERVE_HTTP	{"error": "http: Server closed"}
+store-back/pkg/server.(*Server).Run.func1
+	C:/Users/Zhaksylyk A. Ashim/Desktop/KBTU/7_semester/React/react-fall-2023/store-back/pkg/server/server.go:42
+2023-12-07T16:03:57.530+0600	INFO	app/app.go:79	http server started on http://localhost:2004/swagger/index.html
+2023-12-07T16:04:45.724+0600	INFO	app/app.go:79	http server started on http://localhost:2004/swagger/index.html
+2023-12-07T16:06:06.452+0600	INFO	app/app.go:79	http server started on http://localhost:2004/swagger/index.html
+2023-12-07T16:06:51.086+0600	ERROR	server/server.go:42	ERR_SERVE_HTTP	{"error": "http: Server closed"}
+store-back/pkg/server.(*Server).Run.func1
+	C:/Users/Zhaksylyk A. Ashim/Desktop/KBTU/7_semester/React/react-fall-2023/store-back/pkg/server/server.go:42

@@ -1,0 +1,20 @@
+info:
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: http://www.swagger.io/support
+  description: :-)
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: store-back
+  version: 3.0.3
+paths: {}
+securityDefinitions:
+  ApiKeyAuth:
+    description: Bearer
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"
