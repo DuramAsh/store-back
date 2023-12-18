@@ -4,7 +4,8 @@ import "net/http"
 
 type (
 	OrderRequest struct {
-		Email string `json:"email"`
+		Email  string `json:"email"`
+		Amount int    `json:"amount"`
 	}
 
 	OrderResponse struct {

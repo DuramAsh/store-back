@@ -27,3 +27,4 @@ store-back/pkg/server.(*Server).Run.func1
 2023-12-07T16:06:51.086+0600	ERROR	server/server.go:42	ERR_SERVE_HTTP	{"error": "http: Server closed"}
 store-back/pkg/server.(*Server).Run.func1
 	C:/Users/Zhaksylyk A. Ashim/Desktop/KBTU/7_semester/React/react-fall-2023/store-back/pkg/server/server.go:42
+2023-12-07T17:46:32.308+0600	INFO	app/app.go:79	http server started on http://localhost:2004/swagger/index.html
