@@ -12,8 +12,9 @@ type Product struct {
 
 type Order struct {
 	CreatedAt time.Time `json:"created_at" db:"created_at"`
-	ID        string `json:"id" db:"id"`
-	UserID    string `json:"user_id" db:"user_id"`
+	ID        string    `json:"id" db:"id"`
+	UserID    string    `json:"user_id" db:"user_id"`
+	Amount    int       `json:"amount" db:"amount"`
 }
 
 type User struct {

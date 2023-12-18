@@ -29,7 +29,7 @@ func (r *ProductRepository) SelectProducts(ctx context.Context) (res []product.P
 
 func (r *ProductRepository) SelectOrdersByClient(ctx context.Context, email string) (res []product.Order, err error) {
 	query := `
-		SELECT created_at, id
+		SELECT created_at, id, amount
 		FROM orders
 		WHERE user_id=$1`
 
